@@ -50,22 +50,24 @@ def hello():
 
 	result = Q_program.execute(circuits, backend=backend, shots=shots, max_credits=3, wait=10, timeout=240)
 
+	print(result.get_counts('teleport'))
 	data = result.get_counts('teleport')
+	return str(data);
+
+
+	'''print(data);
 	alice = {}
-	alice['00'] = data['0'] + data['4']
-	alice['10'] = data['2'] + data['6']
-	alice['01'] = data['1'] + data['5']
-	alice['11'] = data['3'] + data['7']
-	#alice['00'] = data['0 0 0'] + data['1 0 0']
-	#alice['10'] = data['0 1 0'] + data['1 1 0']
-	#alice['01'] = data['0 0 1'] + data['1 0 1']
-	#alice['11'] = data['0 1 1'] + data['1 1 1']
+	alice['00'] = data['0 0 0'] + data['1 0 0']
+	alice['10'] = data['0 1 0'] + data['1 1 0']
+	alice['01'] = data['0 0 1'] + data['1 0 1']
+	alice['11'] = data['0 1 1'] + data['1 1 1']
 	plot_histogram(alice)
 
 	bob = {}
 	bob['0'] = data['0 0 0'] + data['0 1 0'] +  data['0 0 1'] + data['0 1 1']
 	bob['1'] = data['1 0 0'] + data['1 1 0'] +  data['1 0 1'] + data['1 1 1']
 	plot_histogram(bob)
+	'''
 
 	#for y in range(0, len(list)):
 	 #   print(list[0])
