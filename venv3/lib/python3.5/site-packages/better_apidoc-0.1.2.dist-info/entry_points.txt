@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        better-apidoc=better_apidoc:main
+    

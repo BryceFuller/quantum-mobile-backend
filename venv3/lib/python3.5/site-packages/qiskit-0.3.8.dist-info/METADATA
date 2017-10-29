@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: qiskit
+Version: 0.3.8
+Summary: Software for developing quantum computing programs
+Home-page: https://github.com/QISKit/qiskit-sdk-py
+Author: QISKit Development Team
+Author-email: qiskit@us.ibm.com
+License: Apache 2.0
+Description-Content-Type: UNKNOWN
+Keywords: qiskit sdk quantum
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.5
+Requires-Dist: IBMQuantumExperience (>=1.8)
+Requires-Dist: matplotlib (<2.1,>=2.0)
+Requires-Dist: networkx (<1.12,>=1.11)
+Requires-Dist: numpy (>=1.13,<1.14)
+Requires-Dist: ply (==3.10)
+Requires-Dist: requests (<2.19,>=2.18)
+Requires-Dist: scipy (<0.20,>=0.19)
+Requires-Dist: sphinx (<1.7,>=1.6)
+
+QISKit is a software development kit for writing quantum
+computing experiments, programs, and applications. Works with Python 3.5 and 3.6
+
